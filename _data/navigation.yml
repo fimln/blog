@@ -1,9 +1,7 @@
 # main links
 main:
-  - title: "Home"
-    url: https://fimln.tech/
-  # - title: "Blog Help"
-  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Github"
+    url: https://github.com/fimln
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
