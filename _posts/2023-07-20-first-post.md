@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 author_profile: true
 title:  "First Post!"
 header:
