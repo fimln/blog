@@ -1,9 +1,9 @@
 ---
-layout: single
+layout: 
 author_profile: true
 title:  "First Post!"
 header:
-  image: /assets/images/twitheader.jpeg"
+  image: /assets/images/twitheader.jpeg
   caption: "Photo credit: [**Alfi Maulana Akbar*](https://fimln.tech)"
 ---
 
