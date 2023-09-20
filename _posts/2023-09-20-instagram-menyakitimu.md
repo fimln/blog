@@ -16,7 +16,7 @@ Namun setelah menggunakan IG selama.. entah berapa abad, dan melalui begitu bany
 Simpel. **Aku mulai sering membanding-bandingkan hidupku dengan orang lain.**
 
 <figure>
-  <img src="![](blog/assets/images/ig-post/kecanduan.jpg)" alt="Ilustrasi orang yang sedang kecanduan sosial media">
+  <img src="/assets/images/ig-post/kecanduan.jpg" alt="Ilustrasi orang yang sedang kecanduan sosial media">
   <figcaption>
     Kuota elit, tidur sulit. Ilustrasi dari <a href="https://www.freepik.com/free-vector/fear-missing-out-concept-illustrated_9878539.htm#page=2&query=instagram%20addict&position=0&from_view=search&track=ais">Freepik.</a>
   </figcaption>
@@ -35,7 +35,7 @@ Ada alasan kenapa ini terjadi, dikutip dari perbincangan singkatku dengan [Bard]
 Akhirnya aku sadar, algoritma Instagram bisa saja menyakitimu.
 
 <figure>
-  <img src="![](blog/assets/images/ig-post/damir-samatkulov-ovt-unsplash.jpg)" alt="Foto orang yang sedang overthinking">
+  <img src="/assets/images/ig-post/damir-samatkulov-ovt-unsplash.jpg" alt="Foto orang yang sedang overthinking">
   <figcaption>
     Kapan ya punya ayang kayak dia? tuh kan jadi overthinking. Foto milik <a href="https://unsplash.com/@dsamatkulov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Damir Samatkulov</a> dari <a href="https://unsplash.com/photos/x7JIZ8XEyGM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash.</a>
   
