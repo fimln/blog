@@ -43,7 +43,7 @@ Akhirnya aku sadar, algoritma Instagram bisa saja menyakitimu.
   </figcaption>
 </figure>
 
-Jika kamu merasa bahwa Instagram berdampak negatif, dan kamu nggak mau mengambil langkah ekstrim sepertiku, mungkin ada beberapa tips untuk menggunakan Instagram secara "lebih sehat":
+Kalau kamu merasa bahwa Instagram berdampak negatif, dan kamu nggak mau mengambil langkah ekstrim sepertiku, mungkin ada beberapa tips untuk menggunakan Instagram secara "lebih sehat":
 
 * **Batasi waktumu di Instagram.** Kurangi waktumu untuk menggunakan Instagram setiap hari.
 * **Fokus pada konten yang positif.** Ikuti akun-akun yang membagikan konten positif dan inspiratif.
