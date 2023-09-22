@@ -1,6 +1,6 @@
 ---
 author_profile: true
-title:  "Instagram Menyakitimu"
+title:  "Instagram Bisa Menyakitimu"
 header:
   image: /assets/images/ig-post/instagramheader.jpg
 ---
