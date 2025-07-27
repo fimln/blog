@@ -12,16 +12,16 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale: "en-US"
-title: "Blog"
+title: "fimln Blog"
 title_separator: "-"
 subtitle: # "By fimln"
 name: "Alfi Maulana Akbar"
 description: "fimln Blog"
-url: "https://fimln.tech"
+url: "https://fimln.dev"
 baseurl: "/blog"
 repository: "fimln/blog"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
