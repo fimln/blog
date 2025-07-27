@@ -1,7 +1,5 @@
 # main links
 main:
-  - title: "fimln.dev"
-    url: https://fimln.dev
   - title: "GitHub"
     url: https://github.com/fimln
   # - title: "Sample Posts"
