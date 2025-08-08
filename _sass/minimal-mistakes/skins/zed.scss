@@ -1,0 +1,73 @@
+/*!
+ * Zed-inspired engineering dark skin for Minimal Mistakes
+ * Scope: variable definitions consumed by the core theme.
+ * This file is imported before `@import "minimal-mistakes";`
+ */
+
+/* Brand and accents */
+$brand-color: #3b82f6 !default; // engineering blue
+$primary-color: $brand-color !default;
+
+/* Base colors */
+$background-color: #0b1220 !default; // deep navy
+$body-background-color: $background-color !default;
+$text-color: #dbe7ff !default;
+$muted-text-color: #a6b3cf !default;
+
+/* Links */
+$link-color: $brand-color !default;
+$link-color-hover: lighten($brand-color, 8%) !default;
+
+/* Borders and separators */
+$border-color: rgba(203, 213, 225, 0.14) !default;
+
+/* Code blocks */
+$code-background-color: #0f172a !default;
+$code-text-color: #e2e8f0 !default;
+
+/* Buttons */
+$btn-primary-color: $brand-color !default;
+
+/* Masthead / header */
+$masthead-background-color: rgba(10, 18, 32, 0.72) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: $link-color-hover !default;
+
+/* Footer */
+$footer-background-color: #070c14 !default;
+$footer-text-color: #9aa9c7 !default;
+
+/* Typography */
+$global-font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif !default;
+$monospace: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+/* Syntax highlighting (Rouge-based) tweaks */
+$base00: #0b1220 !default;
+$base01: #111827 !default;
+$base02: #1f2937 !default;
+$base03: #94a3b8 !default;
+$base04: #cbd5e1 !default;
+$base05: #e2e8f0 !default;
+$base06: #f1f5f9 !default;
+$base07: #ffffff !default;
+$base08: #60a5fa !default; // blue
+$base09: #f59e0b !default; // amber
+$base0A: #a78bfa !default; // purple
+$base0B: #34d399 !default; // green
+$base0C: #22d3ee !default; // cyan
+$base0D: #38bdf8 !default; // sky
+$base0E: #f472b6 !default; // pink
+$base0F: #fb7185 !default; // rose
+
+/* Component surfaces (cards, panels) */
+$surface-1: rgba(255,255,255,0.02) !default;
+$surface-2: rgba(255,255,255,0.04) !default;
+
+/* Tables */
+$table-background-color: transparent !default;
+$table-border-color: $border-color !default;
+
+/* Forms */
+$input-background-color: #0f172a !default;
+$input-border-color: rgba(148,163,184,0.2) !default;
+$input-text-color: $text-color !default;

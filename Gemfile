@@ -27,3 +27,9 @@ gem "github-pages", group: :jekyll_plugins
 # Cf. https://jekyllrb.com/docs/plugins/installation/
 group :jekyll_plugins do
 end
+
+# Local dev-only helpers for Ruby 3.x on Arch (fixes missing stdlib defaults)
+group :development do
+  gem "webrick", "~> 1.8"
+  gem "erb", "~> 4.0"
+end
