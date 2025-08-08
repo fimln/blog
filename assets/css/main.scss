@@ -1,192 +1,155 @@
 ---
 ---
 
-
-
-// Zed-inspired skin + theme
 @import "minimal-mistakes/skins/zed";
 @import "minimal-mistakes";
 
-// Custom overrides
-// Blueprint grid backdrop
 body {
   background-color: $background-color;
-}
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background-image:
-    linear-gradient(to right, rgba(255,255,255,0.12) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255,255,255,0.12) 1px, transparent 1px);
-  background-size: 24px 24px, 24px 24px;
-  mask-image: radial-gradient(ellipse at 50% -20%, rgba(255,255,255,0.6), transparent 70%);
-  z-index: 0;
+  
+  &::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,0.12) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.12) 1px, transparent 1px);
+    background-size: 24px 24px;
+    mask-image: radial-gradient(ellipse at 50% -20%, rgba(255,255,255,0.6), transparent 70%);
+    z-index: 0;
+  }
 }
 
-// Elevate content above grid
-#main,
-.masthead,
-.page__hero,
-.page__content,
-.page,
-.archive,
-.footer {
+#main, .masthead, .page__hero, .page__content, .page, .archive, .footer {
   position: relative;
   z-index: 1;
 }
 
-// Glassy sticky masthead
 .masthead {
   backdrop-filter: saturate(1.2) blur(12px);
   background-color: $masthead-background-color;
   border-bottom: 1px solid $border-color;
 }
 
-// Headings - tighter, bolder
 h1, h2, h3, h4 {
   letter-spacing: -0.01em;
   color: $text-color;
 }
-h1 {
-  font-weight: 800;
-}
-h2, h3 {
-  font-weight: 700;
-}
 
-// Cards and content surfaces
-.page__content {
-  background: rgba(255,255,255,0.02);
-  border: 1px solid $border-color;
-  box-shadow:
-    0 2px 10px rgba(0,0,0,0.35),
-    inset 0 1px 0 rgba(255,255,255,0.02);
-  border-radius: 14px;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 1.2rem 1.4rem;
-}
+h1 { font-weight: 800; }
+h2, h3 { font-weight: 700; }
 
-/* Keep outer page container neutral so inner cards align consistently */
 .page {
   background: transparent;
   border: 0;
   box-shadow: none;
 }
 
-.sidebar.sticky {
-  top: 5.5rem;
+.page__content {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid $border-color;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.02);
+  border-radius: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.2rem 1.4rem;
 }
 
-// Links and interactions
+.sidebar.sticky { top: 5.5rem; }
+
 a {
   text-decoration-color: rgba(59,130,246,0.5);
   text-underline-offset: 3px;
-}
-a:hover {
-  text-decoration-color: rgba(59,130,246,0.9);
+  
+  &:hover { text-decoration-color: rgba(59,130,246,0.9); }
 }
 
-// Buttons
-.btn,
-button,
-input[type="submit"],
-input[type="button"] {
+.btn, button, input[type="submit"], input[type="button"] {
   background: linear-gradient(180deg, rgba(59,130,246,0.7), rgba(59,130,246,0.6));
   color: rgba(255,255,255,0.9) !important;
   border: 1px solid rgba(59,130,246,0.4);
   box-shadow: 0 4px 12px rgba(59,130,246,0.15), inset 0 1px 0 rgba(255,255,255,0.05);
   border-radius: 12px;
-}
-.btn:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="button"]:hover {
-  background: linear-gradient(180deg, rgba(59,130,246,0.8), rgba(59,130,246,0.7));
-  transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(59,130,246,0.2), inset 0 1px 0 rgba(255,255,255,0.08);
+  
+  &:hover {
+    background: linear-gradient(180deg, rgba(59,130,246,0.8), rgba(59,130,246,0.7));
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(59,130,246,0.2), inset 0 1px 0 rgba(255,255,255,0.08);
+  }
 }
 
-// Code blocks
-pre,
-code {
+pre, code {
   background: $code-background-color;
   color: $code-text-color;
   border-radius: 12px;
   border: 1px solid rgba(148,163,184,0.16);
 }
+
 pre {
   padding: 1rem 1.2rem;
   overflow: auto;
 }
 
-// Tables
-table {
-  border-color: $border-color;
-}
-thead {
-  background: rgba(255,255,255,0.03);
-}
+table { border-color: $border-color; }
+thead { background: rgba(255,255,255,0.03); }
 
-// Notices
-.notice,
-.notice--info,
-.notice--primary {
+.notice, .notice--info, .notice--primary {
   background: rgba(59,130,246,0.06);
   border: 1px solid rgba(59,130,246,0.4);
   color: mix(#eaf2ff, $text-color, 90%);
   border-radius: 12px;
 }
 
-// Footer
 .page__footer {
   background: $footer-background-color;
   border-top: 1px solid $border-color;
   color: $footer-text-color;
 }
 
-// Post meta subtler
-.page__meta, .page__lead {
-  color: $muted-text-color;
-}
+.page__meta, .page__lead { color: $muted-text-color; }
 
-// Hero adjustments - consolidated border-radius and overflow
-.page__hero,
-.page__hero--overlay {
+.page__hero, .page__hero--overlay {
   border-radius: 18px;
   overflow: hidden;
 }
 
-.page__hero--overlay {
-  box-shadow: 0 12px 40px rgba(0,0,0,0.5);
-}
+.page__hero--overlay { box-shadow: 0 12px 40px rgba(0,0,0,0.5); }
 
-// Search overlay tweak
 .search__toggle {
   border-radius: 10px;
+  margin-right: 0 !important;
 }
 
-// Layout-specific hero adjustments
-.layout--home .page__hero,
-.layout--home .page__hero--overlay {
-  max-width: 1500px;
-  margin: 0 auto;
+.layout--home {
+  .page__hero, .page__hero--overlay {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  
+  .page { margin-bottom: 0 !important; }
+  .page__inner-wrap { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+  #main, .initial-content { margin-bottom: 0 !important; }
+  .page__footer { margin-top: 0 !important; }
+  
+  .archive {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .archive__item, .list__item { margin-bottom: 0.5rem; }
+  .archive__item-title { margin: 0 0 0.25rem; }
+  .page__meta { margin-top: 0.25rem; }
+  .page__content { padding: 0.8rem 1rem; }
 }
 
-.layout--single .page__hero,
-.layout--single .page__hero--overlay {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-// Override theme's content width constraints
 .layout--single {
-  .page,
-  .page__inner-wrap,
-  #main,
-  .initial-content {
+  .page__hero, .page__hero--overlay {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .page, .page__inner-wrap, #main, .initial-content {
     max-width: 100%;
     margin: 0.5rem auto;
   }
