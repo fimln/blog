@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://fimln.dev/blog/first-post/</loc>
+<lastmod>2023-07-20T00:00:00+07:00</lastmod>
+</url>
+<url>
+<loc>https://fimln.dev/blog/md-test/</loc>
+<lastmod>2023-07-20T00:00:00+07:00</lastmod>
+</url>
+<url>
+<loc>https://fimln.dev/blog/instagram-bisa-menyakitimu/</loc>
+<lastmod>2023-09-23T00:00:00+07:00</lastmod>
+</url>
+<url>
+<loc>https://fimln.dev/blog/about/</loc>
+</url>
+<url>
+<loc>https://fimln.dev/blog/</loc>
+</url>
+</urlset>
