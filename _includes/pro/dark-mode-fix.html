@@ -1,0 +1,22 @@
+{% if site.hydejack.dark_mode.dynamic %}
+<script>
+  window._sunrise = {{ site.hydejack.dark_mode.sunrise | default:"6"  }};
+  window._sunset =  {{ site.hydejack.dark_mode.sunset  | default:"18" }};
+  (function() {
+    try {
+      var saved = localStorage.getItem('hydejack-dark-mode');
+      if (saved === 'dark') {
+        document.body.classList.add('dark-mode');
+        document.body.classList.remove('light-mode');
+        return;
+      }
+      if (saved === 'light') {
+        document.body.classList.add('light-mode');
+        document.body.classList.remove('dark-mode');
+        return;
+      }
+    } catch(e) {}
+    {% include scripts/dark-mode-fix.min.js %}
+  })();
+</script>
+{% endif %}

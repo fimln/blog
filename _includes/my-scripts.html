@@ -1,0 +1,9 @@
+<script>
+(function() {
+  document.addEventListener('hydejack-dark-mode-toggle', function(e) {
+    try {
+      localStorage.setItem('hydejack-dark-mode', e.detail ? 'dark' : 'light');
+    } catch(err) {}
+  });
+})();
+</script>

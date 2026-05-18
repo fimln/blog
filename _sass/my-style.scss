@@ -1,0 +1,31 @@
+html {
+  --body-bg: #FAF9F5;
+  --body-color: #141413;
+  --gray: #6B6A63;
+  --gray-bg: #E8E6DC;
+  --border-color: #E8E6DC;
+  --accent-color: #D97757;
+  --accent-color-faded: rgba(217, 119, 87, 0.18);
+}
+
+body.dark-mode {
+  --body-bg: #1F1E1B;
+  --body-color: #EDEAE0;
+  --gray: #A8A59A;
+  --gray-bg: #2A2825;
+  --border-color: #3A3833;
+  --accent-color: #E89876;
+  --accent-color-faded: rgba(232, 152, 118, 0.22);
+}
+
+@media (prefers-color-scheme: dark) {
+  body:not(.light-mode) {
+    --body-bg: #1F1E1B;
+    --body-color: #EDEAE0;
+    --gray: #A8A59A;
+    --gray-bg: #2A2825;
+    --border-color: #3A3833;
+    --accent-color: #E89876;
+    --accent-color-faded: rgba(232, 152, 118, 0.22);
+  }
+}
