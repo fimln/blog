@@ -9,7 +9,7 @@
 # Ruby Gem
 *.gem
 .bundle
-Gemfile.lock
+# Gemfile.lock is committed so GitHub Actions gets reproducible gem versions
 **/vendor/bundle
 
 # Node.js and NPM
