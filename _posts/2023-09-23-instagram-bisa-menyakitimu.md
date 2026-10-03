@@ -2,9 +2,10 @@
 layout: post
 title: "Instagram Bisa Menyakitimu"
 image: /assets/images/ig-post/instagramheader.jpg
+lang: id
 ---
 
-<br>Siapa yang nggak tau Instagram? aku yakin setiap yang baca pasti punya akun-nya, entah itu akun asli atau alter.
+Siapa yang nggak tau Instagram? aku yakin setiap yang baca pasti punya akun-nya, entah itu akun asli atau alter.
 
 Coba ingat kembali, kapan kamu pertama kali pakai IG? Aku mulai menggunakannya sejak berumur 14 tahun, dimana dorongan untuk *alay* dan menunjukkan jati diri sedang tinggi-tingginya (ya, aku yakin kalian pernah melewati masa itu).
 

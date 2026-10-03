@@ -10,21 +10,17 @@ layout: default
   </header>
   {% if page.image %}
     {% assign image_path = page.image.path | default: page.image %}
-    <img class="post-cover" src="{{ image_path | relative_url }}" alt="{{ page.image.alt | default: page.title | escape }}" decoding="async">
+    {%- comment -%} Covers are 1200x400 unless image.width/height are set; CSS keeps the real ratio once loaded. {%- endcomment -%}
+    <img class="post-cover" src="{{ image_path | relative_url }}" alt="{{ page.image.alt | default: page.title | escape }}" width="{{ page.image.width | default: 1200 }}" height="{{ page.image.height | default: 400 }}" decoding="async">
   {% endif %}
   <div class="prose">{{ content }}</div>
   {% if page.tags.size > 0 %}<p class="categories">Tags: {{ page.tags | join: ', ' | escape }}</p>{% endif %}
-  {% if site.posts.size > 1 %}
+  {% if page.next or page.previous %}
     <aside class="related-posts" aria-labelledby="related-heading">
       <h2 id="related-heading">More posts</h2>
       <ul>
-        {% assign shown = 0 %}
-        {% for post in site.posts %}
-          {% if post.url != page.url and shown < 3 %}
-            <li><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
-            {% assign shown = shown | plus: 1 %}
-          {% endif %}
-        {% endfor %}
+        {% if page.next %}<li><a href="{{ page.next.url | relative_url }}">{{ page.next.title | escape }}</a></li>{% endif %}
+        {% if page.previous %}<li><a href="{{ page.previous.url | relative_url }}">{{ page.previous.title | escape }}</a></li>{% endif %}
       </ul>
     </aside>
   {% endif %}

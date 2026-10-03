@@ -62,8 +62,6 @@ sass:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-include-cache
-  - jekyll-redirect-from
   - jekyll-seo-tag
 
 # Build settings
@@ -87,12 +85,11 @@ exclude:
   - package.json
   - package-lock.json
   - webpack.config.js
-  - run.sh
-  - staticman.yml
   - LICENSE
   - NOTICE.md
   - deploy.md
   - deploy.sh
+  - deploy.ps1
   - improve.md
   - plan.md
   - CLAUDE.md

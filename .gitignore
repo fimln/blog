@@ -40,6 +40,7 @@ CLAUDE.md
 # Local deployment notes and private configuration
 /deploy.md
 /deploy.sh
+/deploy.ps1
 /README.local.md
 *.local.md
 .env
@@ -57,6 +58,3 @@ CLAUDE.md
 /.kiro/logs/
 /.kiro/sessions/
 
-# Unused legacy service configuration (keep local copies only)
-/.travis.yml
-/staticman.yml

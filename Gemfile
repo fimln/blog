@@ -1,13 +1,11 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3"
-gem "jekyll-include-cache", "~> 0.2"
+gem "jekyll", "~> 4.4.1"
 
 group :jekyll_plugins do
-  gem "jekyll-paginate"
-  gem "jekyll-sitemap"
-  gem "jekyll-redirect-from"
-  gem "jekyll-seo-tag"
+  gem "jekyll-paginate", "1.1.0"
+  gem "jekyll-sitemap", "1.4.0"
+  gem "jekyll-seo-tag", "2.9.0"
 end
 
 group :development do
