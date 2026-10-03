@@ -44,9 +44,16 @@ not resources fetched to render a page. Building still requires Ruby and gems.
 
 Use Ruby from `.ruby-version`, Bundler from the lockfile, and `bundle install`.
 In CI, freeze the lockfile (for example, `BUNDLE_FROZEN=true`) after installation.
-GitHub Actions can build this source and upload `_site` with the official Pages
-artifact/deployment actions. Actual Pages settings and workflow availability
-must be checked before publishing; this migration does not restore a workflow.
+GitHub Actions builds `master` using `.github/workflows/pages.yml` and publishes
+only `_site` through the official Pages artifact/deployment actions. Pages uses
+the GitHub Actions publishing source, rather than the legacy `gh-pages` branch.
+The workflow pins Ubuntu 24.04 and action commit hashes. For action updates,
+review the upstream change and replace only the chosen SHA in the workflow:
+[checkout](https://github.com/actions/checkout),
+[setup-ruby](https://github.com/ruby/setup-ruby),
+[configure-pages](https://github.com/actions/configure-pages),
+[upload-pages-artifact](https://github.com/actions/upload-pages-artifact),
+[deploy-pages](https://github.com/actions/deploy-pages).
 
 From PowerShell with Ruby and Bundler installed in WSL Debian:
 

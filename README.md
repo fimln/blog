@@ -51,5 +51,11 @@ Production build (from WSL):
 JEKYLL_ENV=production bundle exec jekyll build
 ```
 
-Deployment scripts and GitHub publishing settings are not changed by this UI
-migration. Review the deployment process separately before publishing.
+## Publish
+
+Push to `master` to build and deploy through `.github/workflows/pages.yml`.
+GitHub Pages uses the GitHub Actions publishing source. Ruby and gems follow
+the committed version files; actions are pinned to commit hashes.
+Only the generated `_site` artifact is published. `gh-pages` is a legacy output
+branch and is no longer used for deployment; do not merge source into it.
+The workflow can also be run manually from the repository's Actions tab.
