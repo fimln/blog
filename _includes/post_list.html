@@ -1,0 +1,18 @@
+<ul class="post-list">
+  {% for post in include.posts %}
+    <li>
+      <article class="post-preview{% if post.image %} has-image{% endif %}">
+        <div>
+          {% include post-meta.html post=post %}
+          <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+          <p class="post-excerpt">{{ post.excerpt | strip_html | normalize_whitespace | truncate: 180 | escape }}</p>
+          <a class="read-more" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title | escape }}">Read post <span aria-hidden="true">→</span></a>
+        </div>
+        {% if post.image %}
+          {% assign image_path = post.image.path | default: post.image %}
+          <a class="preview-image" href="{{ post.url | relative_url }}" tabindex="-1" aria-hidden="true"><img src="{{ image_path | relative_url }}" alt="" loading="lazy" decoding="async" width="320" height="200"></a>
+        {% endif %}
+      </article>
+    </li>
+  {% endfor %}
+</ul>

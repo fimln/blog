@@ -1,0 +1,11 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="{{ site.theme_color }}">
+  {% seo %}
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
+  <link rel="preload" href="{{ '/assets/fonts/FiraSans-Regular.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  {% if page.search %}<script src="{{ '/assets/js/search.js' | relative_url }}" defer></script>{% endif %}
+</head>

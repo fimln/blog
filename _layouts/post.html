@@ -1,0 +1,31 @@
+---
+layout: default
+---
+{% include back_link.html %}
+<article class="reading-pane">
+  <header class="post-header">
+    {% include post-meta.html post=page %}
+    <h1>{{ page.title | escape }}</h1>
+    {% if page.categories.size > 0 %}<p class="categories">{{ page.categories | join: ' · ' | escape }}</p>{% endif %}
+  </header>
+  {% if page.image %}
+    {% assign image_path = page.image.path | default: page.image %}
+    <img class="post-cover" src="{{ image_path | relative_url }}" alt="{{ page.image.alt | default: page.title | escape }}" decoding="async">
+  {% endif %}
+  <div class="prose">{{ content }}</div>
+  {% if page.tags.size > 0 %}<p class="categories">Tags: {{ page.tags | join: ', ' | escape }}</p>{% endif %}
+  {% if site.posts.size > 1 %}
+    <aside class="related-posts" aria-labelledby="related-heading">
+      <h2 id="related-heading">More posts</h2>
+      <ul>
+        {% assign shown = 0 %}
+        {% for post in site.posts %}
+          {% if post.url != page.url and shown < 3 %}
+            <li><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
+            {% assign shown = shown | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </aside>
+  {% endif %}
+</article>

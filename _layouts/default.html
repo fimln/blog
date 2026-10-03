@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  {%- include head.html -%}
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <div class="w">
+      <header class="site-header">
+        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+        <nav aria-label="Main navigation">
+          {% for item in site.menu %}
+            {% assign first_character = item.url | slice: 0 %}
+            <a href="{% if first_character == '/' %}{{ item.url | relative_url }}{% else %}{{ item.url }}{% endif %}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title | escape }}</a>
+          {% endfor %}
+        </nav>
+      </header>
+      <main id="content" tabindex="-1">{{ content }}</main>
+      <footer class="site-footer">
+        <span>Made with ❤️ and ☕ by Alfi.</span>
+        <span>Using <a href="https://jekyllrb.com/">jekyll</a> and <a href="https://github.com/riggraz/no-style-please">no-style-please</a>.</span>
+      </footer>
+    </div>
+  </body>
+</html>

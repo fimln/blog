@@ -1,0 +1,62 @@
+# Vim
+*~
+*.sw[p_]
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Ruby Gem
+*.gem
+.bundle
+# Gemfile.lock is committed so GitHub Actions gets reproducible gem versions
+**/vendor/bundle
+
+# Node.js and NPM
+node_modules
+npm-debug.log*
+package-lock.json
+codekit-config.json
+
+# macOS
+.DS_Store
+
+# Jekyll generated files
+.jekyll-cache
+.jekyll-metadata
+.sass-cache
+_asset_bundler_cache
+_site
+/dist/
+
+#Plan
+plan.md
+image.md
+
+# Claude
+.claude/
+CLAUDE.md
+
+# Local deployment notes and private configuration
+/deploy.md
+/deploy.sh
+/README.local.md
+*.local.md
+.env
+.env.*
+!.env.example
+*.log
+*.pem
+*.key
+/credentials/
+/secrets/
+/.aws/
+/.vscode/
+/.kiro/settings/
+/.kiro/cache/
+/.kiro/logs/
+/.kiro/sessions/
+
+# Unused legacy service configuration (keep local copies only)
+/.travis.yml
+/staticman.yml

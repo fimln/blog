@@ -1,0 +1,103 @@
+title: fimln Blog
+tagline: Lifetime learner.
+description: A place to capture my journey.
+url: https://fimln.github.io
+baseurl: /blog
+lang: en
+copyright: © 2026 Alfi Maulana Akbar
+
+# Permanent dark bluish palette. Theme and fonts are stored locally.
+theme_color: '#0D1320'
+background_color: '#0D1320'
+
+logo: /assets/images/logo.png
+
+author:
+  name: Alfi Maulana Akbar
+  about: |
+    Lifetime learner. Engineering, data, and life notes.
+  picture: /assets/images/logo.png
+  social:
+    instagram: https://www.instagram.com/alfimlnbr/
+    linkedin: https://www.linkedin.com/in/fimln/
+    github: fimln
+
+# Navigation
+menu:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Search
+    url: /search/
+  - title: fimln.github.io
+    url: https://fimln.github.io
+
+# Content
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page:num/
+
+# Encoding and markdown
+encoding: utf-8
+markdown_ext: markdown,mkdown,mkdn,mkd,md
+markdown: kramdown
+highlighter: rouge
+excerpt_separator: "\n\n"
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  syntax_highlighter: rouge
+
+sass:
+  style: compressed
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-include-cache
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+
+# Build settings
+exclude:
+  - .kiro
+  - .ruby-version
+  - dist
+  - package.ps1
+  - DEPENDENCIES.md
+  - README.local.md
+  - .env
+  - .env.*
+  - credentials
+  - secrets
+  - vendor
+  - .bundle
+  - .sass-cache
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - webpack.config.js
+  - run.sh
+  - staticman.yml
+  - LICENSE
+  - NOTICE.md
+  - deploy.md
+  - deploy.sh
+  - improve.md
+  - plan.md
+  - CLAUDE.md
+  - image.md
+  - README.md
+
+keep_files:
+  - .git
