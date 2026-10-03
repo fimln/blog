@@ -29,7 +29,6 @@ Ada alasan kenapa ini terjadi, dikutip dari perbincangan singkatku dengan [Bard]
 * **Instagram seringkali menampilkan sisi positif dari kehidupan seseorang.** Kebanyakan orang cenderung hanya membagikan hal-hal baik tentang diri mereka di Instagram. Hal ini membuat kita berpikir bahwa mereka selalu bahagia dan sukses.
 * **"Adu nasib".**  Instagram sering kali menampilkan kehidupan orang lain yang tampak sempurna, baik dari segi fisik, karier, maupun hubungan. Hal ini dapat membuat kita merasa tidak cukup baik, dan merasa bahwa hidup kita tidak seindah yang ditampilkan orang lain.
 
-<hr/>
 Kadang aku heran, tujuanku buka aplikasi IG untuk menghibur diri. Tapi pas udah *scroll* beberapa *feed* dan buka *stories*, kok malah makin galau ya?
 
 Akhirnya aku sadar, algoritma Instagram bisa saja menyakitimu.
@@ -48,7 +47,6 @@ Kalau kamu merasa bahwa Instagram berdampak negatif, dan kamu nggak mau mengambi
 * **Fokus pada konten yang positif.** Ikuti akun-akun yang membagikan konten positif dan inspiratif.
 * **Jangan membandingkan dirimu dengan orang lain.** Ingatlah bahwa Instagram seringkali hanya menampilkan sisi positif dari kehidupan seseorang.
 
-<hr/>
 Jika kamu merasa sudah terlalu kecanduan IG, kamu bisa menghapus sementara akunmu melalui [link ini.](https://www.instagram.com/accounts/remove/request/temporary/) Kalau sudah mendingan, tinggal login lagi dan akunmu akan muncul kembali.
 
 Oh iya, akunku juga dihapus sementara kok. Mungkin nanti akan aku aktifkan lagi kalau sudah ada foto yang bisa dipamerkan, hehe.
