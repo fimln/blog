@@ -57,6 +57,7 @@ kramdown:
 
 sass:
   style: compressed
+  sourcemap: never
 
 # Plugins
 plugins:
@@ -95,6 +96,8 @@ exclude:
   - CLAUDE.md
   - image.md
   - README.md
+  - assets/fonts/README.md
+  - assets/fonts/SOURCE.txt
 
 keep_files:
   - .git
