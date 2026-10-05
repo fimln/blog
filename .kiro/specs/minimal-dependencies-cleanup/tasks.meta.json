@@ -1,0 +1,371 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Build the HEAD reference into `/tmp/mdc`": [
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210009838
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210035943
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210167318
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210584151
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210725734
+      }
+    ],
+    "2.1 Edit `Gemfile`": [
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210009940
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210184927
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210318322
+      }
+    ],
+    "2.2 Hand-edit `Gemfile.lock`": [
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210010009
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210186984
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210319220
+      }
+    ],
+    "2.3 Run the frozen manifest check (Property 2)": [
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210010077
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210373178
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210438161
+      }
+    ],
+    "3.1 Disable source maps and exclude the two font documents": [
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210010114
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210188050
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210320530
+      }
+    ],
+    "4.1 Edit `_sass/no-style-please.scss` per the design table": [
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210010153
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210188865
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210321918
+      }
+    ],
+    "4.2 Edit `assets/css/main.scss`": [
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210010195
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210190181
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210324303
+      }
+    ],
+    "5.1 Edit `vendor/no-style-please/UPSTREAM.md`": [
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210010235
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210191541
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210371944
+      }
+    ],
+    "6. Checkpoint": [
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210010276
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210455945
+      }
+    ],
+    "7.1 Build the candidate from the repository": [
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210010335
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210456661
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210584068
+      }
+    ],
+    "7.2 Write and run `/tmp/mdc/compare.rb` (Properties 1 and 3)": [
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210010372
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210725934
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210998417
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210999679
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791212158754
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791212159749
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791212415185
+      }
+    ],
+    "7.3 Diff the build logs": [
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210010411
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210726200
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791212415770
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791212425140
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791212769263
+      }
+    ],
+    "7.4 Focused CSS review": [
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210010448
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210726364
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791212416198
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791212426009
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791212771193
+      }
+    ],
+    "7.5 Scope check": [
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210010496
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210726448
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210948114
+      }
+    ],
+    "7.6 Clean up `/tmp/mdc/`": [
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210010571
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791212773264
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791212871045
+      }
+    ],
+    "8.1 Report results in the user's language": [
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210010678
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791212871634
+      },
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791212880981
+      }
+    ],
+    "1. Capture the reference build before any edit": [
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210167418
+      }
+    ],
+    "3. Update `_config.yml`": [
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210320696
+      }
+    ],
+    "4. Remove redundant CSS": [
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210324422
+      }
+    ],
+    "5. Update theme provenance": [
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210372034
+      }
+    ],
+    "2. Clean the gem manifest": [
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791210438260
+      }
+    ],
+    "7. Verify the candidate build": [
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791212871146
+      }
+    ],
+    "8. Final report": [
+      {
+        "executionId": "20284873-4dc1-440c-9e56-04ed9bb8ddda",
+        "chatSessionId": "sess_c5c7b81c-52e9-49d1-a079-7890df1895d6",
+        "timestamp": 1791212881099
+      }
+    ]
+  }
+}
