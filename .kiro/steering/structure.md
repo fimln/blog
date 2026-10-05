@@ -3,19 +3,17 @@ inclusion: always
 ---
 # Structure
 
-- `_posts/`: dated Markdown and front matter (`layout: post`).
-- `_layouts/`, `_includes/`: local templates; preserve layout names used by content.
-- `_sass/no-style-please.scss`: adapted upstream baseline; custom styling belongs
-  in `assets/css/main.scss`.
-- `assets/fonts/`: Fira Sans WOFF2, version/source and license.
-- `assets/images/`: local article images/icons; stats are dated SVG snapshots.
-- `search.html`, `search.json`, `assets/js/search.js`: search page/index/behavior.
-- `_config.yml`: metadata, navigation, plugins, permalink, pagination, excludes.
-- `vendor/`: provenance/licenses, excluded from publication.
-- `README.md`, `DEPENDENCIES.md`: run commands and maintenance contract.
-- `package.ps1`: production build and ZIP, no publishing.
-- `_site/`, `dist/`, caches: generated; do not hand-edit or commit.
-- `.kiro/steering/`: short always-included context, excluded from publication.
-
-Change only relevant files. Keep documentation accurate when behavior changes;
-do not produce additional documentation artifacts unless requested.
+- `_posts/`: `YYYY-MM-DD-title.md`, front matter `layout: post`.
+- `_layouts/`, `_includes/`: templates. Keep layout names used by content.
+- `index.html`, `about.md`, `404.html`: pages.
+- `search.html`, `search.json`, `assets/js/search.js`: search page, index, behavior.
+- `_sass/no-style-please.scss`: upstream baseline, keep minimal edits.
+  Custom styles go in `assets/css/main.scss`.
+- `assets/fonts/`: Fira Sans WOFF2 with license. `assets/images/`: local images.
+- `_config.yml`: metadata, menu, plugins, permalink, pagination, excludes.
+- `vendor/`: theme provenance and licenses (not published).
+- `README.md`, `DEPENDENCIES.md`: update only when documented behavior changes.
+- `.github/workflows/pages.yml`: deploy pipeline. Do not edit unless asked.
+- Local and untracked, leave alone: `README.local.md`, `deploy.ps1`, `deploy.sh`,
+  `.claude/`.
+- Generated, never hand-edit or commit: `_site/`, `dist/`, `.jekyll-cache/`.
