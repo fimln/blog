@@ -1,4 +1,4 @@
-# fimln Blog
+# alfi's Blog
 
 Jekyll with a locally vendored no-style-please theme, permanent dark bluish
 colors and self-hosted Fira Sans. Articles keep their existing URLs under `/blog/`.
