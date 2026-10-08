@@ -1,7 +1,7 @@
 title: fimln Blog
 tagline: Lifetime learner.
 description: A place to capture my journey.
-url: https://fimln.github.io
+url: https://alfi.ai.id
 baseurl: /blog
 lang: en
 copyright: © 2026 Alfi Maulana Akbar
@@ -30,8 +30,8 @@ menu:
     url: /about/
   - title: Search
     url: /search/
-  - title: fimln.github.io
-    url: https://fimln.github.io
+  - title: alfi.ai.id
+    url: https://alfi.ai.id
 
 # Content
 permalink: /:categories/:title/

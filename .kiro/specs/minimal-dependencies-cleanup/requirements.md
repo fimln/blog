@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The blog is a Jekyll 4.4.1 site deployed to https://fimln.github.io/blog/
+The blog is a Jekyll 4.4.1 site deployed to https://alfi.ai.id/blog/
 (baseurl `/blog`) by `.github/workflows/pages.yml`.
 
 This feature is limited to redundant CSS cleanup, disabling the CSS source map,

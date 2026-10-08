@@ -3,7 +3,7 @@ inclusion: always
 ---
 # Product and scope
 
-Personal Jekyll blog, a GitHub Pages project site at https://fimln.github.io/blog/.
+Personal Jekyll blog, a GitHub Pages project site at https://alfi.ai.id/blog/.
 
 ## Scope
 
