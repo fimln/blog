@@ -1,7 +1,8 @@
 # alfi's Blog
 
 Jekyll with a locally vendored no-style-please theme, permanent dark bluish
-colors and self-hosted Fira Sans. Articles keep their existing URLs under `/blog/`.
+colors and self-hosted Fira Sans. The site lives at `https://blog.alfi.ai.id/`;
+article paths keep their categories and slugs, without the old `/blog` prefix.
 
 ## Run locally
 
@@ -15,7 +16,7 @@ bundle install
 bundle exec jekyll serve --host 127.0.0.1 --port 4000 --force_polling
 ```
 
-Open http://localhost:4000/blog/ and stop with Ctrl+C.
+Open http://localhost:4000/ and stop with Ctrl+C.
 Refresh after edits; restart after changing `_config.yml`.
 Use `--port 4001` if port 4000 is occupied.
 
@@ -62,6 +63,12 @@ the committed version files; actions are pinned to commit hashes.
 Only the generated `_site` artifact is published. `gh-pages` is a legacy output
 branch and is no longer used for deployment; do not merge source into it.
 The workflow can also be run manually from the repository's Actions tab.
+
+The Pages custom domain is `blog.alfi.ai.id`, with a DNS-only Cloudflare CNAME
+to `fimln.github.io`. Hosting remains GitHub Pages, not Cloudflare Workers.
+The proxied apex domain redirects `/blog` and `/blog/...` to the corresponding
+path at `https://blog.alfi.ai.id`, preserving query strings. That redirect is
+managed in Cloudflare Single Redirects, separately from this Jekyll build.
 
 The local, untracked `deploy.ps1`/`deploy.sh` helpers commit only `_posts` and
 `assets/images`, then push `master`. Commit layout, style, config or search
