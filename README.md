@@ -27,10 +27,12 @@ the time zone), and `slug` in YAML front matter. Existing posts also pin their
 original `url`. `<!--more-->` ends the preview excerpt. Optional fields are
 `image` (a path or a map with `path`, `alt`, `width`, `height`), `contentLang`,
 `tags`, and `categories`. Category labels do not automatically change URLs.
+See `buat_artikel.txt` for a short example. Future-dated posts and drafts are
+excluded from normal builds; use `hugo server -D -F` to preview both.
 
 Configuration and navigation are in `hugo.toml`, templates in `layouts/`, and
-the editable stylesheet in `assets/css/main.css`. Hugo minifies it to the same
-public `/assets/css/main.css` URL. Static files live in `static/`; for example,
+the editable stylesheet in `assets/css/main.css`. Hugo serves its minified output
+at `/assets/css/main.min.css`. Static files live in `static/`; for example,
 `static/assets/images/photo.jpg` is served at `/assets/images/photo.jpg`.
 Use ordinary Markdown or HTML paths in articles, not Jekyll Liquid expressions.
 
@@ -42,3 +44,7 @@ Pushing `master` triggers `.github/workflows/pages.yml`, which builds with the
 pinned Hugo binary and deploys `public/` using GitHub Pages Actions. A local
 build or preview does not commit, push, or deploy. Review the local preview
 before publishing. Dependency sources and licenses are in `DEPENDENCIES.md`.
+
+This repository is public: tracked drafts, Git history, and everything under
+`static/` are public too. Keep credentials and private notes out of Git; ignore
+rules do not remove previously committed data. AI guidance is in `AGENTS.md`.

@@ -41,6 +41,7 @@ CLAUDE.md
 /deploy.md
 /deploy.sh
 /deploy.ps1
+/deploy.test.ps1
 /README.local.md
 *.local.md
 .env

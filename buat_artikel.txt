@@ -1,0 +1,31 @@
+CARA MEMBUAT POST BARU DI HUGO
+
+1. Buat file: content/posts/2026-10-18-judul-post.md
+
+2. Isi dengan contoh berikut:
+
+---
+title: "Judul Post"
+date: 2026-10-18T10:00:00+07:00
+slug: judul-post
+image: /assets/images/cover.jpg
+---
+
+Paragraf pembuka untuk cuplikan.
+
+<!--more-->
+
+Isi lengkap artikel.
+
+3. image opsional. Simpan gambarnya di static/assets/images/.
+
+4. Jalankan preview dari folder project:
+
+   .\.tools\hugo\hugo.exe server
+
+   Buka http://localhost:1313/
+
+5. Setelah sesuai, commit dan push ke master.
+   GitHub Actions akan menerbitkan post secara otomatis.
+
+Catatan: tanggal yang masih di masa depan membuat post belum ditampilkan.
