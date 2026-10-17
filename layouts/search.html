@@ -1,9 +1,4 @@
----
-layout: default
-title: Search
-permalink: /search/
-search: true
----
+{{ define "main" }}
 <form id="search-form" class="search-form" role="search">
   <div class="search-controls">
     <input id="search-input" name="q" type="search" aria-label="Search posts" aria-describedby="search-status" autocomplete="off">
@@ -11,8 +6,8 @@ search: true
   </div>
 </form>
 <p id="search-status" class="search-status" role="status" aria-live="polite"></p>
-<noscript><p>Search requires JavaScript. You can still <a href="{{ '/' | relative_url }}">browse all posts</a>.</p></noscript>
-<ul id="search-results" class="post-list" aria-label="Search results" data-index="{{ '/search.json' | relative_url }}"></ul>
+<noscript><p>Search requires JavaScript. You can still <a href="/">browse all posts</a>.</p></noscript>
+<ul id="search-results" class="post-list" aria-label="Search results" data-index="/search.json"></ul>
 <template id="search-result-template">
   <li>
     <article class="post-preview">
@@ -23,3 +18,4 @@ search: true
     </article>
   </li>
 </template>
+{{ end }}

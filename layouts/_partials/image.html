@@ -1,0 +1,5 @@
+{{- $image := .Params.image -}}
+{{- if reflect.IsMap $image -}}
+  {{- return $image -}}
+{{- end -}}
+{{- return (dict "path" $image "alt" .Title "width" 1200 "height" 400) -}}

@@ -1,0 +1,37 @@
+{{- $description := .Description | default site.Params.description -}}
+{{- $isPost := eq .Section "posts" -}}
+{{- if $isPost }}{{ $description = .Description | default (partial "excerpt.html" .) }}{{ end -}}
+{{- $image := partial "image.html" . -}}
+{{- $url := .Permalink -}}
+{{- $title := .Title -}}
+{{- if eq .Kind "404" }}{{ $title = "Page not found" }}{{ end -}}
+{{- if eq .Kind "404" }}{{ $url = "404.html" | absURL }}{{ end -}}
+<title>{{ $title }} | {{ site.Title }}</title>
+{{ hugo.Generator }}
+<meta name="author" content="{{ site.Params.author }}">
+<meta name="description" content="{{ $description }}">
+<link rel="canonical" href="{{ $url }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:locale" content="{{ .Params.contentLang | default site.Language.Locale }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:url" content="{{ $url }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:type" content="{{ if $isPost }}article{{ else }}website{{ end }}">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description }}">
+<meta name="twitter:card" content="{{ if $image.path }}summary_large_image{{ else }}summary{{ end }}">
+{{ with $image.path }}
+<meta property="og:image" content="{{ . | absURL }}">
+<meta name="twitter:image" content="{{ . | absURL }}">
+{{ end }}
+{{ $schema := dict "@context" "https://schema.org" "@type" "WebPage" "author" (dict "@type" "Person" "name" site.Params.author) "description" $description "headline" $title "url" $url "publisher" (dict "@type" "Organization" "name" site.Params.author "logo" (dict "@type" "ImageObject" "url" (site.Params.logo | absURL))) }}
+{{ if .IsHome }}{{ $schema = merge $schema (dict "@type" "WebSite" "name" site.Title) }}{{ end }}
+{{ if $isPost }}
+  {{ $date := .Date.Format "2006-01-02T15:04:05Z07:00" }}
+  {{ $modified := .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}
+  <meta property="article:published_time" content="{{ $date }}">
+  <meta property="article:modified_time" content="{{ $modified }}">
+  {{ $schema = merge $schema (dict "@type" "BlogPosting" "datePublished" $date "dateModified" $modified "mainEntityOfPage" (dict "@type" "WebPage" "@id" $url)) }}
+{{ end }}
+{{ with $image.path }}{{ $schema = merge $schema (dict "image" (. | absURL)) }}{{ end }}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>

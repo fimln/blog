@@ -1,0 +1,1 @@
+{{- return (.Summary | plainify | htmlUnescape | strings.TrimSpace | replaceRE `\s+` " " | truncate 180 "...") -}}

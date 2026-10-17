@@ -58,3 +58,9 @@ CLAUDE.md
 /.kiro/logs/
 /.kiro/sessions/
 
+
+# Hugo generated files and local binary
+/public/
+/resources/
+/.hugo_build.lock
+/.tools/

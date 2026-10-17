@@ -1,0 +1,28 @@
+{{ define "main" }}
+{{ $paginator := .Paginate (where site.RegularPages "Section" "posts").ByDate.Reverse }}
+<ul class="post-list">
+  {{ range $paginator.Pages }}
+    <li>
+      <article class="post-preview{{ if .Params.image }} has-image{{ end }}">
+        <div>
+          {{ partial "post-meta.html" . }}
+          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          <p class="post-excerpt">{{ partial "excerpt.html" . }}</p>
+          <a class="read-more" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">Read post <span aria-hidden="true">→</span></a>
+        </div>
+        {{ if .Params.image }}
+          {{ $image := partial "image.html" . }}
+          <a class="preview-image" href="{{ .RelPermalink }}" tabindex="-1" aria-hidden="true"><img src="{{ $image.path }}" alt="" loading="lazy" decoding="async" width="320" height="200"></a>
+        {{ end }}
+      </article>
+    </li>
+  {{ end }}
+</ul>
+{{ if gt $paginator.TotalPages 1 }}
+  <nav class="pagination" aria-label="Pagination">
+    {{ with $paginator.Prev }}<a rel="prev" href="{{ .URL }}">← Newer posts</a>{{ end }}
+    <span>Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}</span>
+    {{ with $paginator.Next }}<a rel="next" href="{{ .URL }}">Older posts →</a>{{ end }}
+  </nav>
+{{ end }}
+{{ end }}

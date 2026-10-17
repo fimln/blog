@@ -1,0 +1,28 @@
+{{ define "main" }}
+<a class="back-link" href="/">← All posts</a>
+<article class="reading-pane">
+  <header class="post-header">
+    {{ partial "post-meta.html" . }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.categories }}<p class="categories">{{ delimit . " · " }}</p>{{ end }}
+  </header>
+  {{ if .Params.image }}
+    {{ $image := partial "image.html" . }}
+    <img class="post-cover" src="{{ $image.path }}" alt="{{ $image.alt | default .Title }}" width="{{ $image.width | default 1200 }}" height="{{ $image.height | default 400 }}" decoding="async">
+  {{ end }}
+  <div class="prose">{{ .Content }}</div>
+  {{ with .Params.tags }}<p class="categories">Tags: {{ delimit . ", " }}</p>{{ end }}
+  {{ $posts := (where site.RegularPages "Section" "posts").ByDate }}
+  {{ $next := $posts.Prev . }}
+  {{ $previous := $posts.Next . }}
+  {{ if or $next $previous }}
+    <aside class="related-posts" aria-labelledby="related-heading">
+      <h2 id="related-heading">More posts</h2>
+      <ul>
+        {{ with $next }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}
+        {{ with $previous }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}
+      </ul>
+    </aside>
+  {{ end }}
+</article>
+{{ end }}

@@ -3,42 +3,35 @@ inclusion: always
 ---
 # Tech
 
-Jekyll 4.4.1, Ruby 3.3.8 (`.ruby-version`), Bundler 4.0.11, gems locked in
-`Gemfile.lock`. Kramdown GFM, Liquid, Rouge, Sass. Plugins: jekyll-paginate,
-jekyll-sitemap, jekyll-seo-tag. no-style-please is a vendored, locally adapted
-fork (not a gem or remote theme). Search uses native JavaScript only.
-Versions and upstreams: `DEPENDENCIES.md`.
+Hugo 0.167.0 standard edition, Goldmark, Go templates, ordinary CSS.
+no-style-please is adapted locally. Search uses native JavaScript only.
+Versions, sources, licenses: `DEPENDENCIES.md`. No Ruby, Sass, or Node.js build step.
 
 ## Code rules
 
-- Internal links and assets use `relative_url` (baseurl `/blog`).
-- JSON values use `jsonify`. Search results render with `textContent`.
-- Search indexes all published posts. JS loads only on `/search/`; the index
-  is fetched only after 2+ query characters.
-- Do not change versions, pins, vendored upstream files or licenses.
-- No new gems, npm packages, CDNs or frameworks.
+- Preserve public article and asset URLs at the domain root.
+- JSON values use `jsonify`; search results render with `textContent`.
+- Search indexes only posts. JS loads only on `/search/`; data is fetched after 2+ characters.
+- Article HTML is author-controlled and rendered by Goldmark with unsafe enabled.
+- Do not change dependency pins, licenses, branding, or responsive behavior without request.
+- No new packages, CDNs, frameworks, RSS, or external runtime assets.
 
 ## Commands
 
-WSL terminal, repository root:
-
-```bash
-bundle exec jekyll serve --host 127.0.0.1 --port 4000 --force_polling
-JEKYLL_ENV=production bundle exec jekyll build
+```powershell
+.\setup.ps1
+.\.tools\hugo\hugo.exe server --bind 127.0.0.1 --port 1313 --disableFastRender
+.\package.ps1
+python tests/site_test.py dist/site
 ```
 
-Preview http://localhost:4000/blog/ (4001 if busy). Restart after
-`_config.yml` changes. `.\package.ps1` (PowerShell) builds
-`dist/blog-static.zip` via WSL Debian.
-
-## Verification
-
-Run the production build after changes; add focused syntax or data checks only
-when relevant. No browser automation or new test files unless asked. Never
-claim a visual check was done.
+Preview: http://localhost:1313/ . The package is `dist/blog-static.zip`.
+Run focused checks after changes. Compare desktop/mobile against the existing
+layout when changing templates or CSS; report only checks actually performed.
 
 ## Git and publishing
 
 Pushing `master` deploys via `.github/workflows/pages.yml`. No commit, push,
-force-push, Pages-setting change or `deploy.ps1`/`deploy.sh` run unless asked.
-Check `git status` first and preserve unrelated local changes.
+force-push, Pages-setting change, or deployment-menu run unless authorized.
+Check Git status first; preserve unrelated changes. The migration must be
+reviewed locally before commit and push.

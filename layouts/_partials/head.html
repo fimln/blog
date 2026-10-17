@@ -1,0 +1,12 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="{{ site.Params.themeColor }}">
+  {{ partial "seo.html" . }}
+  <link rel="icon" href="/favicon.ico">
+  <link rel="preload" href="/assets/fonts/FiraSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  {{ $css := resources.Get "css/main.css" | minify | resources.Copy "assets/css/main.css" }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  {{ if eq .Layout "search" }}<script src="/assets/js/search.js" defer></script>{{ end }}
+</head>

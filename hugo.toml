@@ -1,0 +1,48 @@
+baseURL = 'https://blog.alfi.ai.id/'
+title = "alfi's Blog"
+locale = 'en'
+timeZone = 'Asia/Jakarta'
+disableKinds = ['taxonomy', 'term', 'section', 'rss']
+enableRobotsTXT = true
+
+[params]
+description = 'A place to capture my journey.'
+author = 'Alfi Maulana Akbar'
+themeColor = '#0D1320'
+logo = '/assets/images/logo.png'
+
+[[menus.main]]
+name = 'Home'
+url = '/'
+weight = 1
+[[menus.main]]
+name = 'Search'
+url = '/search/'
+weight = 2
+[[menus.main]]
+name = 'alfi.ai.id'
+url = 'https://alfi.ai.id'
+weight = 3
+
+[pagination]
+pagerSize = 5
+path = 'page'
+disableAliases = true
+
+[permalinks.page]
+posts = '/:slug/'
+
+[outputs]
+home = ['HTML', 'Search']
+[outputFormats.Search]
+mediaType = 'application/json'
+baseName = 'search'
+isPlainText = true
+notAlternative = true
+
+[markup.goldmark.renderer]
+unsafe = true
+[markup.goldmark.extensions.typographer]
+disable = false
+[markup.highlight]
+noClasses = false

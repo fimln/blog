@@ -1,24 +1,64 @@
----
----
-@use "no-style-please";
+html { height: 100%; }
+
+body {
+  margin: 0;
+  min-height: 100%;
+  overflow-wrap: break-word;
+}
+
+h2, h3, h4, h5, h6 { margin-top: 3rem; }
+
+p { margin: 1rem 0; }
+
+li { margin: 0.4rem 0; }
+
+.w {
+  margin: 0 auto;
+}
+
+hr {
+  text-align: center;
+  border: 0;
+}
+
+table { width: 100%; }
+
+table, th, td {
+  border: thin solid black;
+  border-collapse: collapse;
+  padding: 0.4rem;
+}
+
+div.highlighter-rouge code {
+  overflow-x: auto;
+}
+
+blockquote { padding: 1rem; }
+blockquote p { margin: 0; }
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
 
 @font-face {
   font-family: "Fira Sans";
-  src: url("{{ '/assets/fonts/FiraSans-Regular.woff2' | relative_url }}") format("woff2");
+  src: url("/assets/fonts/FiraSans-Regular.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "Fira Sans";
-  src: url("{{ '/assets/fonts/FiraSans-Bold.woff2' | relative_url }}") format("woff2");
+  src: url("/assets/fonts/FiraSans-Bold.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
   font-family: "Fira Sans";
-  src: url("{{ '/assets/fonts/FiraSans-Italic.woff2' | relative_url }}") format("woff2");
+  src: url("/assets/fonts/FiraSans-Italic.woff2") format("woff2");
   font-style: italic;
   font-weight: 400;
   font-display: swap;
@@ -34,7 +74,7 @@
   --border: #252c38;
 }
 * { box-sizing: border-box; }
-html { scroll-behavior: auto; }
+html { scroll-behavior: auto; scrollbar-gutter: stable; }
 html, body { background: var(--background); }
 body {
   color: var(--text);
@@ -80,7 +120,7 @@ h3 { font-size: 1.25rem; }
 .search-status { color: var(--muted); font-size: .9rem; margin: 1rem 0 1.5rem; }
 .search-status:empty { display: none; }
 #search-results:not(:empty) { margin-top: 1.5rem; }
-.reading-pane { width: 100%; max-width: 72ch; margin: 0 auto; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: clamp(1.25rem, 4vw, 2.75rem); }
+.reading-pane { width: 100%; margin: 0 auto; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: clamp(1.25rem, 4vw, 2.75rem); }
 .post-header { margin-bottom: 1.75rem; }
 .post-header h1 { margin-top: .75rem; }
 .post-cover { width: 100%; height: auto; border-radius: 10px; margin-bottom: 2rem; }
@@ -135,7 +175,6 @@ th { background: #101a2b; }
     border-radius: 0;
     padding: 0;
   }
-  .reading-pane { max-width: none; }
   .post-preview.has-image { grid-template-columns: minmax(0, 1fr); }
   .preview-image { grid-row: 1; }
 }

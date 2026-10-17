@@ -3,7 +3,7 @@ inclusion: always
 ---
 # Product and scope
 
-Personal Jekyll blog, a GitHub Pages project site at https://alfi.ai.id/blog/.
+Personal Hugo blog, published by GitHub Pages at https://blog.alfi.ai.id/.
 
 ## Scope
 
@@ -25,10 +25,9 @@ Personal Jekyll blog, a GitHub Pages project site at https://alfi.ai.id/blog/.
 - Articles, permalinks, attribution, licenses and accessibility.
 - Permanent dark bluish palette and local Fira Sans. No theme toggle.
 - Home lists posts directly: no hero, intro or large heading.
-- About: no large heading; content and social links unchanged.
 - Post lists: cards from 768px up; below 768px no card background, border or
   padding, entries separated by a thin line and spacing.
-- Footer centered: "Made with love and coffee by Alfi", links to Jekyll and theme.
+- Footer centered: "Made with love and coffee by Alfi", links to Hugo and theme.
 - `/search/`: only input, Search button and results. No visible title, label,
   placeholder, instructions or result count. Input keeps a nonvisual label.
   Results reuse post list styles.
