@@ -1,8 +1,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="{{ site.Params.themeColor }}">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f7f9fd" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="{{ site.Params.themeColor }}" media="(prefers-color-scheme: dark)">
+  <script src="/assets/js/theme.js"></script>
   {{ partial "seo.html" . }}
   <link rel="icon" href="/favicon.ico">
   <link rel="preload" href="/assets/fonts/FiraSans-Regular.woff2" as="font" type="font/woff2" crossorigin>

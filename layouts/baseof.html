@@ -8,7 +8,12 @@
         <a class="site-title" href="/">{{ site.Title }}</a>
         <nav aria-label="Main navigation">
           {{ range site.Menus.main }}
+            <span class="nav-item">
             <a href="{{ .URL }}"{{ if eq $.RelPermalink .URL }} aria-current="page"{{ end }}>{{ .Name }}</a>
+            {{ if eq .URL "https://alfi.ai.id" }}
+              <button id="theme-toggle" class="theme-toggle" type="button" hidden aria-label="Toggle theme"><span aria-hidden="true">☀️</span></button>
+            {{ end }}
+            </span>
           {{ end }}
         </nav>
       </header>

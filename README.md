@@ -1,8 +1,24 @@
 # alfi's Blog
 
 Personal blog built with Hugo 0.167.0 and a local adaptation of `no-style-please`.
-The dark bluish layout, Fira Sans fonts, images, and search JavaScript are local.
+The Oyenza-inspired layout retains the blue palette and local Fira Sans fonts.
+The theme follows the device setting by default. The emoji button beside
+alfi.ai.id switches between Dark and Light and remembers your choice. Its moon
+or sun icon shows the active theme. Without JavaScript, the theme follows
+the device setting. Fonts, images, and JavaScript are served locally.
 Published URL: `https://blog.alfi.ai.id/`.
+
+Article text scales from 17–18px at the default browser font size, with 1.7 line
+height and a 70ch maximum text column. Headings scale with the viewport. Preview
+images use a consistent crop; article images keep their proportions, with covers
+limited to 32rem tall and inline images to 42rem wide. These choices follow
+[USWDS typography guidance](https://designsystem.digital.gov/components/typography)
+and [web.dev responsive image guidance](https://web.dev/learn/design/responsive-images).
+
+Internal page navigation uses native cross-document View Transitions: content
+fades in with a small upward motion while the header stays steady. Animations
+respect reduced motion. Browsers without support use ordinary page navigation;
+links to other domains are outside the transition.
 
 On Windows, install the pinned official binary with checksum verification:
 
