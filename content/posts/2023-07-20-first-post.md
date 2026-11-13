@@ -6,7 +6,7 @@ slug: first-post
 url: /first-post/
 ---
 
-# Welcome
+## Welcome
 
 <!--more-->
 
