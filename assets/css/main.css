@@ -161,6 +161,10 @@ h3 { font-size: 1.25rem; }
 .prose h2, .prose h3, .prose h4 { margin-top: 2.5rem; }
 .prose h2 { font-size: clamp(1.5rem, 1.25rem + 1vw, 1.875rem); }
 .prose h3 { font-size: clamp(1.25rem, 1.125rem + .5vw, 1.5rem); }
+.prose h4, .prose h5, .prose h6 { font-weight: 700; line-height: 1.4; margin-bottom: .75rem; }
+.prose h4 { font-size: 1.1875rem; }
+.prose h5 { font-size: 1.125rem; margin-top: 2rem; }
+.prose h6 { font-size: 1em; font-style: italic; margin-top: 1.5rem; }
 .prose p, .prose ul, .prose ol { margin: 1.25rem 0; }
 .prose ul, .prose ol { padding-left: 1.5rem; }
 .prose img { max-width: min(100%, 42rem); height: auto; border-radius: 0; }
